@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+        </head>
+        <body>
+
+        </body>
+
+        <script>
+jQuery(function($, undefined) {
+    $('body').terminal(function(command) {
+        switch(command){
+        case 'help' : this.echo('Available commands are email, cv, github, linkedin, medium, dev.to');break;
+        case 'email': this.echo('mohaned.mashaly12@gmail.com');break;
+        case 'cv' : this.echo('https://docs.google.com/document/d/1Rmxf6WzyyCdyEWMl7KHSiENPeIZ6umBahVGgFM6-60s/edit?usp=sharing');break;
+        case 'github' : this.echo('https://github.com/12mohaned');break;
+        case 'linkedin' : this.echo('https://www.linkedin.com/in/mohaned-mashaly-a88820147/');break;
+        case 'dev.to' : this.echo('https://dev.to/12mohaned');break;
+        case 'medium' : this.echo('https://mohaned-mashaly12.medium.com/');break;
+        default : this.echo('Un known command : ' + String(command));
+        }
+    }, {
+        greetings: ' Welcome to my personal website, \n feel free to use the command line \n for more information type "help" \n if you would like to use normal website, click here "https://12mohaned.github.io/personalwebsite.github.io/Home.html"' ,
+        name: 'js_demo',
+        height: 1200,
+        width: 1536,
+        prompt: '> '
+    });
+});
+            </script>
+            <style>
+            
+            </style>
