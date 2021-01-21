@@ -2,7 +2,7 @@
 Personal Website which Contains (Projects I have done, Courses, CV, Articles)
 
 
-https://12mohaned.github.io/personalwebsite.github.io/main
+https://12mohaned.github.io/personalwebsite.github.io/index
 
 Disclaimer :- 
 
